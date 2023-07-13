@@ -68,10 +68,12 @@ input[type=password] {
     text-align: center;
     border-radius : 5px;
     font-size: 16px;
+    cursor: pointer;
     }
 
     .google{
       background-color:				#2F4F4F;
+      cursor: pointer;
       border: none;
       padding: 10px;
       margin: 10px;
@@ -113,9 +115,15 @@ input[type=password] {
             margin-bottom: 15;
         }
 
+        .error{
+          background-color: red;
+          color: black;
+          border-color: white;
+          border-radius: 2px solid;
+        }
+        
         @media screen and (max-width:900px){
           .box{
             flex-direction: column;
-            
         }
         }

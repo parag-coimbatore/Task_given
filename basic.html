@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
-       
+        <script src="script.js"></script>
             <div class="box">
                 <div class="left"> <img class="image" src="mountain.jpg" alt=""></div>
                 <div class="right">
@@ -12,16 +12,18 @@
                         <p class="w">Welcome back</p>
                         <h1 class="log">Login to your account</h1>
                         Email <br>
-                        <input type="text" placeholder="john.snow@gmail.com" class=e_in><br>
+                        <input type="text" id="email" placeholder="john.snow@gmail.com" class=e_in><br>
+                        <div id="emailError" class="error"></div>
                         Password <br>
-                        <input type="password"placeholder="*****" class="e_p"><br><br>
+                        <input type="password" id="password" placeholder="*****" class="e_p"><br><br>
+                        <div id="passwordError" class="error"></div>
                         <div class="forget">
                             <input type="radio" class="form-check-input" id="exampleCheck1">
                             <label for="radio" style="margin-left: 0" > Remember me</label>
                             <a href="https://www.example.com">Forgot password?</a>
                         </div>
                         <div>
-                            <button type="button" value="Login Now" class="login">Login Now</button> <br>
+                            <button type="button" value="Login Now" onclick="validateLogin()" class="login">Login Now</button> <br>
                             <!-- <input type="button" value="Login Now" class="login" ><br> -->
                             <button type="button" value=" Or sign-in with google" class="google"><img src="./static/img.png" alt=""> Or sign-in with google</button>
                             <!-- <input type="button" value=" Or sign-in with google" class="google" ><br> -->
